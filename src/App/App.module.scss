@@ -10,9 +10,11 @@
 
 .container {
   width: 100%;
-  max-width: 480px;
+  
 
   .header {
+    display:flex;
+    justify-content: center;
     h1 {
       font-weight: 800;
       font-size: 2rem;
@@ -30,4 +32,61 @@
       margin: 0;
     }
   }
+
+.cardContainer {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right:2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  background-color: gray;
+ 
+.cardContainerFlex {
+  display: flex;
+  flex-wrap: wrap;
+
+  .cardProduct {
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    width: 18rem;
+    margin: auto;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: white;
+    .cardDetail{
+      opacity: 0.9;
+      margin: 0.75rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: #ff7a00;
+      .cardTitle {
+        color: white;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+      }
+      .cardPrice{
+        color: white;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .cardButton {
+          width: 2.5rem;
+          height: 2.5rem;
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+          font-weight: 500;
+          border-radius: 9999px;
+
+          background-color: black;
+          border: none;
+        }
+      }
+    }
+  }
+}
+}
 }
